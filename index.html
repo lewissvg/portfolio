@@ -1,303 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lewis Brotchie — frontend & product engineer · Lewis Makes Ltd</title>
-<meta name="description" content="Lewis Brotchie — frontend, product & game engineer. A decade of websites, web apps and games (Pixi.js), plus C#/.NET and mobile.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link id="font-link" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400;1,6..72,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lewis Brotchie — frontend & product engineer · Lewis Makes Ltd</title>
+  <meta name="description"
+    content="Lewis Brotchie — frontend, product & game engineer. A decade of websites, web apps and games (Pixi.js), plus C#/.NET and mobile.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link id="font-link"
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400;1,6..72,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<div class="grain"></div>
-<div class="vignette"></div>
+  <div class="grain"></div>
+  <div class="vignette"></div>
 
-<!-- ============ NAV ============ -->
-<nav class="nav" id="nav">
-  <a href="#top" class="brand">
-    <span class="mark"></span>
-    Lewis Brotchie
-    <small>· Lewis Makes Ltd</small>
-  </a>
-  <div class="nav-links">
-    <a href="#work" class="nav-link"><span class="num">01</span>Work</a>
-    <a href="#about" class="nav-link"><span class="num">02</span>About</a>
-    <a href="#stack" class="nav-link"><span class="num">03</span>Stack</a>
-    <a href="#writing" class="nav-link"><span class="num">04</span>Writing</a>
-    <a href="#contact" class="nav-cta">Available for work</a>
-  </div>
-</nav>
-
-<main>
-
-  <!-- ============ HERO ============ -->
-  <section class="hero" id="top">
-    <canvas id="hero-canvas"></canvas>
-
-    <div class="hero-inner">
-      <div>
-        <div class="eyebrow">
-          <span class="dot"></span>
-          Frontend &amp; Product Engineer
-        </div>
-
-        <h1 class="hero-title">
-          I build <span class="em">careful</span><br>
-          interfaces<br>
-          <span class="quiet">— for the web, mobile, and play.</span>
-        </h1>
-
-        <div class="hero-actions">
-          <a href="#work" class="btn btn-primary">
-            See selected work
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10m0 0l-4-4m4 4l-4 4"/></svg>
-          </a>
-          <a href="#contact" class="btn btn-ghost">
-            Get in touch
-          </a>
-        </div>
-      </div>
-
-      <aside class="hero-meta">
-        <div class="hero-meta-row">
-          <div class="k">Studio</div>
-          <div class="v">Lewis Makes Ltd</div>
-        </div>
-        <div class="hero-meta-row">
-          <div class="k">Based</div>
-          <div class="v">North Wales, UK · <span class="accent">remote-first</span></div>
-        </div>
-        <div class="hero-meta-row">
-          <div class="k">Years</div>
-          <div class="v">10+ shipping web, mobile &amp; games</div>
-        </div>
-        <div class="hero-meta-row">
-          <div class="k">Now</div>
-          <div class="v">Building <span class="accent">Rectify</span> · open to client work</div>
-        </div>
-      </aside>
+  <!-- ============ NAV ============ -->
+  <nav class="nav" id="nav">
+    <a href="#top" class="brand">
+      <span class="mark"></span>
+      Lewis Brotchie
+      <small>· Lewis Makes Ltd</small>
+    </a>
+    <div class="nav-links">
+      <a href="#work" class="nav-link"><span class="num">01</span>Work</a>
+      <a href="#about" class="nav-link"><span class="num">02</span>About</a>
+      <a href="#stack" class="nav-link"><span class="num">03</span>Stack</a>
+      <a href="#writing" class="nav-link"><span class="num">04</span>Writing</a>
+      <a href="#contact" class="nav-cta">Available for work</a>
     </div>
-  </section>
+  </nav>
 
-  <!-- ============ MARQUEE ============ -->
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee-track">
-      <span>frontend</span><span class="dot">●</span>
-      <span>web apps</span><span class="dot">●</span>
-      <span>games &amp; canvas</span><span class="dot">●</span>
-      <span>C# / .NET</span><span class="dot">●</span>
-      <span>mobile</span><span class="dot">●</span>
-      <span>proofs of concept</span><span class="dot">●</span>
-      <span>frontend</span><span class="dot">●</span>
-      <span>web apps</span><span class="dot">●</span>
-      <span>games &amp; canvas</span><span class="dot">●</span>
-      <span>C# / .NET</span><span class="dot">●</span>
-      <span>mobile</span><span class="dot">●</span>
-      <span>proofs of concept</span><span class="dot">●</span>
-    </div>
-  </div>
+  <main>
 
-  <!-- ============ ABOUT ============ -->
-  <section class="block" id="about">
-    <div class="container">
-      <div class="section-head reveal">
-        <div class="section-num">02 — About</div>
-        <h2 class="section-title">A decade of building <span class="em">things people use.</span></h2>
-      </div>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <canvas id="hero-canvas"></canvas>
 
-      <div class="about-grid">
-        <div class="about-prose reveal">
-          <p>I'm a frontend and product engineer who's spent the last ten-plus years shipping <span class="em">websites, web apps and games</span> for teams big and small.</p>
-          <p class="ink-dim">I'm happiest somewhere between design and engineering — taking a fuzzy idea, prototyping it quickly, and grinding the details until it feels good in the hand.</p>
-          <p>My day job is the front of the stack — TypeScript, React, Pixi.js — but I write C# and Node when proofs of concept call for it, and ship native mobile when products do.</p>
-        </div>
-        <div class="about-side reveal">
-          <div class="about-side-block">
-            <div class="k">Approach</div>
-            <div class="v"><strong>Prototype, then polish.</strong> I'd rather have a rough thing on screen by Friday than a perfect spec by month-end.</div>
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow">
+            <span class="dot"></span>
+            Frontend &amp; Product Engineer
           </div>
-          <div class="about-side-block">
-            <div class="k">Strengths</div>
-            <div class="v"><strong>Animation, interaction, edge cases.</strong> The unglamorous work that makes a product feel <em>finished</em>.</div>
-          </div>
-          <div class="about-side-block">
-            <div class="k">Working with</div>
-            <div class="v">Founders &amp; product teams who want a single owner across design polish, frontend, and the occasional native or backend stretch.</div>
-          </div>
-          <div class="about-side-block">
-            <div class="k">Available</div>
-            <div class="v"><strong>Yes</strong> — for short sprints, longer engagements, or technical co-founder conversations.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ============ WORK ============ -->
-  <section class="block" id="work">
-    <div class="container">
-      <div class="section-head reveal">
-        <div class="section-num">01 — Selected work</div>
-        <h2 class="section-title">Recent <span class="em">projects.</span></h2>
-      </div>
+          <h1 class="hero-title">
+            I build <span class="em">careful</span><br>
+            interfaces<br>
+            <span class="quiet">— for the web, mobile, and play.</span>
+          </h1>
 
-      <div class="projects">
-
-        <!-- Rectify -->
-        <article class="project reveal">
-          <div class="project-meta">
-            <div class="year">2026</div>
-            <div class="status">— in private alpha</div>
-            <div class="role">Solo · design, build, ship</div>
-          </div>
-          <div class="project-body">
-            <h3>Rectify <span class="em">— autocorrect for Windows.</span></h3>
-            <p>System-wide autocorrect for desktop. Watches keystrokes through a low-level Windows hook, fuzzy-matches against an 82k-word dictionary in sub-millisecond time, and quietly fixes typos in any text field. 100% local — your typing never leaves the machine.</p>
-            <div class="project-tags">
-              <span class="tag">C# / .NET 8</span>
-              <span class="tag">WPF</span>
-              <span class="tag">SymSpell</span>
-              <span class="tag">Win32 hooks</span>
-              <span class="tag">Marketing site</span>
-            </div>
-            <a href="https://claude.ai/design/p/57a3523f-e0bd-4aa6-9bf5-4c20d3d8cdfd" class="project-link" target="_blank" rel="noopener">
-              View site
-              <span>→</span>
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">
+              See selected work
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M3 8h10m0 0l-4-4m4 4l-4 4" />
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-ghost">
+              Get in touch
             </a>
           </div>
-          <div class="project-vis vis-rectify" aria-hidden="true">
-            <div class="chrome"><span></span><span></span><span></span></div>
-            <div class="body">
-              <div class="label-mint">// rectify · live</div>
-              <div>
-                <span class="typo">recieve</span>
-                <span class="arr">→</span>
-                <span class="fix">receive</span>
-              </div>
-              <div>
-                <span class="typo">defintely</span>
-                <span class="arr">→</span>
-                <span class="fix">definitely</span>
-              </div>
-            </div>
-          </div>
-        </article>
+        </div>
 
-        <!-- Placeholder -->
-        <article class="project reveal">
-          <div class="project-meta">
-            <div class="year">soon</div>
-            <div class="status">— in development</div>
-            <div class="role">More on the way</div>
+        <aside class="hero-meta">
+          <div class="hero-meta-row">
+            <div class="k">Studio</div>
+            <div class="v">Lewis Makes Ltd</div>
           </div>
-          <div class="project-body">
-            <h3>A web game, in the works.</h3>
-            <p>An in-browser game built on Pixi.js — pushing canvas rendering, juicy feedback and clean state management. Quietly cooking; details when it's closer to ship.</p>
-            <div class="project-tags">
-              <span class="tag">Pixi.js</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">Canvas / WebGL</span>
-            </div>
-            <span class="project-link disabled">Coming soon</span>
+          <div class="hero-meta-row">
+            <div class="k">Based</div>
+            <div class="v">North Wales, UK · <span class="accent">remote-first</span></div>
           </div>
-          <div class="project-vis vis-stripe" aria-hidden="true">
-            <div class="label">// project_02 · placeholder</div>
+          <div class="hero-meta-row">
+            <div class="k">Years</div>
+            <div class="v">10+ shipping web, mobile &amp; games</div>
           </div>
-        </article>
+          <div class="hero-meta-row">
+            <div class="k">Now</div>
+            <div class="v">Building <span class="accent">Rectify</span> · open to client work</div>
+          </div>
+        </aside>
+      </div>
+    </section>
 
-        <!-- Placeholder -->
-        <article class="project reveal">
-          <div class="project-meta">
-            <div class="year">2025</div>
-            <div class="status">— archive</div>
-            <div class="role">Ten years of past work</div>
-          </div>
-          <div class="project-body">
-            <h3>Earlier work, <span class="em">on request.</span></h3>
-            <p>Web apps, marketing sites, native mobile, and a handful of games shipped across the last decade — much of it under NDA. Happy to walk through specifics on a call.</p>
-            <div class="project-tags">
-              <span class="tag">React</span>
-              <span class="tag">TypeScript</span>
-              <span class="tag">Node</span>
-              <span class="tag">Pixi.js</span>
-              <span class="tag">iOS / Android</span>
-            </div>
-            <a href="#contact" class="project-link">
-              Ask for the deck
-              <span>→</span>
-            </a>
-          </div>
-          <div class="project-vis vis-stripe" aria-hidden="true">
-            <div class="label">// archive · 2014–2025</div>
-          </div>
-        </article>
-
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>frontend</span><span class="dot">●</span>
+        <span>web apps</span><span class="dot">●</span>
+        <span>games &amp; canvas</span><span class="dot">●</span>
+        <span>C# / .NET</span><span class="dot">●</span>
+        <span>mobile</span><span class="dot">●</span>
+        <span>proofs of concept</span><span class="dot">●</span>
+        <span>frontend</span><span class="dot">●</span>
+        <span>web apps</span><span class="dot">●</span>
+        <span>games &amp; canvas</span><span class="dot">●</span>
+        <span>C# / .NET</span><span class="dot">●</span>
+        <span>mobile</span><span class="dot">●</span>
+        <span>proofs of concept</span><span class="dot">●</span>
       </div>
     </div>
-  </section>
 
-  <!-- ============ STACK ============ -->
-  <section class="block" id="stack">
-    <div class="container">
-      <div class="section-head reveal">
-        <div class="section-num">03 — Stack</div>
-        <h2 class="section-title">Tools I <span class="em">reach for.</span></h2>
-      </div>
+    <!-- ============ ABOUT ============ -->
+    <section class="block" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-num">02 — About</div>
+          <h2 class="section-title">A decade of building <span class="em">things people use.</span></h2>
+        </div>
 
-      <div class="stack-cols reveal">
-        <div class="stack-col">
-          <h4>Frontend</h4>
-          <div class="summary">daily driver</div>
-          <ul>
-            <li><strong>TypeScript</strong></li>
-            <li><strong>React</strong></li>
-            <li>HTML / CSS, modern</li>
-            <li>Vite, Next, Astro</li>
-            <li>Storybook</li>
-          </ul>
-        </div>
-        <div class="stack-col">
-          <h4>Canvas &amp; games</h4>
-          <div class="summary">10+ years</div>
-          <ul>
-            <li><strong>Pixi.js</strong></li>
-            <li>WebGL fundamentals</li>
-            <li>2D physics &amp; tweens</li>
-            <li>Asset pipelines</li>
-            <li>Performance profiling</li>
-          </ul>
-        </div>
-        <div class="stack-col">
-          <h4>Backend &amp; native</h4>
-          <div class="summary">when it's needed</div>
-          <ul>
-            <li><strong>C# / .NET 8</strong></li>
-            <li><strong>Node.js</strong></li>
-            <li>WPF / desktop tooling</li>
-            <li>Win32 / system APIs</li>
-            <li>iOS &amp; Android (released)</li>
-          </ul>
-        </div>
-        <div class="stack-col">
-          <h4>Process</h4>
-          <div class="summary">how I work</div>
-          <ul>
-            <li>Prototype-first</li>
-            <li>Design adjacent</li>
-            <li>Solo &amp; small teams</li>
-            <li>Async, written</li>
-            <li>Ship, then iterate</li>
-          </ul>
+        <div class="about-grid">
+          <div class="about-prose reveal">
+            <p>I'm a frontend and product engineer who's spent the last ten-plus years shipping <span
+                class="em">websites, web apps and games</span> for teams big and small.</p>
+            <p class="ink-dim">I'm happiest somewhere between design and engineering — taking a fuzzy idea, prototyping
+              it quickly, and grinding the details until it feels good in the hand.</p>
+            <p>My day job is the front of the stack — TypeScript, React, Pixi.js — but I write C# and Node when proofs
+              of concept call for it, and ship native mobile when products do.</p>
+          </div>
+          <div class="about-side reveal">
+            <div class="about-side-block">
+              <div class="k">Approach</div>
+              <div class="v"><strong>Prototype, then polish.</strong> I'd rather have a rough thing on screen by Friday
+                than a perfect spec by month-end.</div>
+            </div>
+            <div class="about-side-block">
+              <div class="k">Strengths</div>
+              <div class="v"><strong>Animation, interaction, edge cases.</strong> The unglamorous work that makes a
+                product feel <em>finished</em>.</div>
+            </div>
+            <div class="about-side-block">
+              <div class="k">Working with</div>
+              <div class="v">Founders &amp; product teams who want a single owner across design polish, frontend, and
+                the occasional native or backend stretch.</div>
+            </div>
+            <div class="about-side-block">
+              <div class="k">Available</div>
+              <div class="v"><strong>Yes</strong> — for short sprints, longer engagements, or technical co-founder
+                conversations.</div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============ TESTIMONIALS ============ -->
-  <section class="block" id="testimonials">
+    <!-- ============ WORK ============ -->
+    <section class="block" id="work">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-num">01 — Selected work</div>
+          <h2 class="section-title">Recent <span class="em">projects.</span></h2>
+        </div>
+
+        <div class="projects">
+
+          <!-- Rectify -->
+          <article class="project reveal">
+            <div class="project-meta">
+              <div class="year">2026</div>
+              <div class="status">— in private alpha</div>
+              <div class="role">Solo · design, build, ship</div>
+            </div>
+            <div class="project-body">
+              <h3>Rectify <span class="em">— autocorrect for Windows.</span></h3>
+              <p>System-wide autocorrect for desktop. Watches keystrokes through a low-level Windows hook, fuzzy-matches
+                against an 82k-word dictionary in sub-millisecond time, and quietly fixes typos in any text field. 100%
+                local — your typing never leaves the machine.</p>
+              <div class="project-tags">
+                <span class="tag">C# / .NET 8</span>
+                <span class="tag">WPF</span>
+                <span class="tag">SymSpell</span>
+                <span class="tag">Win32 hooks</span>
+                <span class="tag">Marketing site</span>
+              </div>
+              <a href="https://claude.ai/design/p/57a3523f-e0bd-4aa6-9bf5-4c20d3d8cdfd" class="project-link"
+                target="_blank" rel="noopener">
+                View site
+                <span>→</span>
+              </a>
+            </div>
+            <div class="project-vis vis-rectify" aria-hidden="true">
+              <div class="chrome"><span></span><span></span><span></span></div>
+              <div class="body">
+                <div class="label-mint">// rectify · live</div>
+                <div>
+                  <span class="typo">recieve</span>
+                  <span class="arr">→</span>
+                  <span class="fix">receive</span>
+                </div>
+                <div>
+                  <span class="typo">defintely</span>
+                  <span class="arr">→</span>
+                  <span class="fix">definitely</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Placeholder -->
+          <article class="project reveal">
+            <div class="project-meta">
+              <div class="year">soon</div>
+              <div class="status">— in development</div>
+              <div class="role">More on the way</div>
+            </div>
+            <div class="project-body">
+              <h3>A web game, in the works.</h3>
+              <p>An in-browser game built on Pixi.js — pushing canvas rendering, juicy feedback and clean state
+                management. Quietly cooking; details when it's closer to ship.</p>
+              <div class="project-tags">
+                <span class="tag">Pixi.js</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Canvas / WebGL</span>
+              </div>
+              <span class="project-link disabled">Coming soon</span>
+            </div>
+            <div class="project-vis vis-stripe" aria-hidden="true">
+              <div class="label">// project_02 · placeholder</div>
+            </div>
+          </article>
+
+          <!-- Placeholder -->
+          <article class="project reveal">
+            <div class="project-meta">
+              <div class="year">2025</div>
+              <div class="status">— archive</div>
+              <div class="role">Ten years of past work</div>
+            </div>
+            <div class="project-body">
+              <h3>Earlier work, <span class="em">on request.</span></h3>
+              <p>Web apps, marketing sites, native mobile, and a handful of games shipped across the last decade — much
+                of it under NDA. Happy to walk through specifics on a call.</p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Node</span>
+                <span class="tag">Pixi.js</span>
+                <span class="tag">iOS / Android</span>
+              </div>
+              <a href="#contact" class="project-link">
+                Ask for the deck
+                <span>→</span>
+              </a>
+            </div>
+            <div class="project-vis vis-stripe" aria-hidden="true">
+              <div class="label">// archive · 2014–2025</div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STACK ============ -->
+    <section class="block" id="stack">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-num">03 — Stack</div>
+          <h2 class="section-title">Tools I <span class="em">reach for.</span></h2>
+        </div>
+
+        <div class="stack-cols reveal">
+          <div class="stack-col">
+            <h4>Frontend</h4>
+            <div class="summary">daily driver</div>
+            <ul>
+              <li><strong>TypeScript</strong></li>
+              <li><strong>React</strong></li>
+              <li>HTML / CSS, modern</li>
+              <li>Vite, Next, Astro</li>
+              <li>Storybook</li>
+            </ul>
+          </div>
+          <div class="stack-col">
+            <h4>Canvas &amp; games</h4>
+            <div class="summary">10+ years</div>
+            <ul>
+              <li><strong>Pixi.js</strong></li>
+              <li>WebGL fundamentals</li>
+              <li>2D physics &amp; tweens</li>
+              <li>Asset pipelines</li>
+              <li>Performance profiling</li>
+            </ul>
+          </div>
+          <div class="stack-col">
+            <h4>Backend &amp; native</h4>
+            <div class="summary">when it's needed</div>
+            <ul>
+              <li><strong>C# / .NET 8</strong></li>
+              <li><strong>Node.js</strong></li>
+              <li>WPF / desktop tooling</li>
+              <li>Win32 / system APIs</li>
+              <li>iOS &amp; Android (released)</li>
+            </ul>
+          </div>
+          <div class="stack-col">
+            <h4>Process</h4>
+            <div class="summary">how I work</div>
+            <ul>
+              <li>Prototype-first</li>
+              <li>Design adjacent</li>
+              <li>Solo &amp; small teams</li>
+              <li>Async, written</li>
+              <li>Ship, then iterate</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <!-- <section class="block" id="testimonials">
     <div class="container">
       <div class="section-head reveal">
         <div class="section-num">— Kind words</div>
@@ -327,249 +346,261 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <!-- ============ WRITING ============ -->
-  <section class="block" id="writing">
-    <div class="container">
-      <div class="section-head reveal">
-        <div class="section-num">04 — Writing</div>
-        <h2 class="section-title">Notes from the <span class="em">workbench.</span></h2>
+    <!-- ============ WRITING ============ -->
+    <section class="block" id="writing">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-num">04 — Writing</div>
+          <h2 class="section-title">Notes from the <span class="em">workbench.</span></h2>
+        </div>
+
+        <div class="writing-list reveal">
+          <a class="write-item" href="#">
+            <div class="date">Soon · '26</div>
+            <h4>Building Rectify — what a year of <span class="em">low-level keyboard hooks</span> taught me.</h4>
+            <div class="read">— in draft</div>
+          </a>
+          <a class="write-item" href="#">
+            <div class="date">Soon · '26</div>
+            <h4>Pixi.js as a UI engine — when canvas <span class="em">beats DOM</span>, and when it doesn't.</h4>
+            <div class="read">— in draft</div>
+          </a>
+          <a class="write-item" href="#">
+            <div class="date">Soon · '26</div>
+            <h4>The case for <span class="em">prototyping in production code.</span></h4>
+            <div class="read">— in draft</div>
+          </a>
+          <a class="write-item" href="#">
+            <div class="date">Soon · '26</div>
+            <h4>Animation polish, the unglamorous kind — micro-easings, exit transitions, and the work nobody notices.
+            </h4>
+            <div class="read">— in draft</div>
+          </a>
+        </div>
+
+        <div class="writing-foot">writing more — sign up for the occasional dispatch via email below</div>
       </div>
+    </section>
 
-      <div class="writing-list reveal">
-        <a class="write-item" href="#">
-          <div class="date">Soon · '26</div>
-          <h4>Building Rectify — what a year of <span class="em">low-level keyboard hooks</span> taught me.</h4>
-          <div class="read">— in draft</div>
-        </a>
-        <a class="write-item" href="#">
-          <div class="date">Soon · '26</div>
-          <h4>Pixi.js as a UI engine — when canvas <span class="em">beats DOM</span>, and when it doesn't.</h4>
-          <div class="read">— in draft</div>
-        </a>
-        <a class="write-item" href="#">
-          <div class="date">Soon · '26</div>
-          <h4>The case for <span class="em">prototyping in production code.</span></h4>
-          <div class="read">— in draft</div>
-        </a>
-        <a class="write-item" href="#">
-          <div class="date">Soon · '26</div>
-          <h4>Animation polish, the unglamorous kind — micro-easings, exit transitions, and the work nobody notices.</h4>
-          <div class="read">— in draft</div>
-        </a>
-      </div>
-
-      <div class="writing-foot">writing more — sign up for the occasional dispatch via email below</div>
-    </div>
-  </section>
-
-  <!-- ============ CONTACT ============ -->
-  <section class="block" id="contact">
-    <div class="container">
-      <div class="contact-block reveal">
-        <div class="contact-inner">
-          <div>
-            <h2 class="contact-headline">Got something to <span class="em">build?</span></h2>
-            <div class="resume-row">
-              <a href="resume.html" class="btn btn-primary" target="_blank" rel="noopener">
-                Download CV
-                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 2v9m0 0l-3-3m3 3l3-3M3 14h10"/></svg>
-              </a>
-              <span class="meta">PDF · ~1 page · updated this week</span>
+    <!-- ============ CONTACT ============ -->
+    <section class="block" id="contact">
+      <div class="container">
+        <div class="contact-block reveal">
+          <div class="contact-inner">
+            <div>
+              <h2 class="contact-headline">Got something to <span class="em">build?</span></h2>
+              <div class="resume-row">
+                <a href="resume.html" class="btn btn-primary" target="_blank" rel="noopener">
+                  Download CV
+                  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6">
+                    <path d="M8 2v9m0 0l-3-3m3 3l3-3M3 14h10" />
+                  </svg>
+                </a>
+                <span class="meta">PDF · ~1 page · updated this week</span>
+              </div>
             </div>
-          </div>
-          <div class="contact-list">
-            <div class="contact-row">
-              <span class="k">Email</span>
-              <a href="/cdn-cgi/l/email-protection#6507170a11060d0c004b0900120c16250208040c094b060a08">
-                <span class="__cf_email__" data-cfemail="4321312c37202b2a266d2f26342a3003242e222a2f6d202c2e">[email&#160;protected]</span>
-                <span class="arrow">↗</span>
-              </a>
-            </div>
-            <div class="contact-row">
-              <span class="k">Studio</span>
-              <a>Lewis Makes Ltd <span class="arrow">·</span></a>
-            </div>
-            <div class="contact-row">
-              <span class="k">Based</span>
-              <a>North Wales, UK <span class="arrow">·</span></a>
-            </div>
-            <div class="contact-row">
-              <span class="k">Available</span>
-              <a><span style="color: var(--accent);">●</span> Open for projects <span class="arrow">·</span></a>
+            <div class="contact-list">
+              <div class="contact-row">
+                <span class="k">Email</span>
+                <a href="/cdn-cgi/l/email-protection#6507170a11060d0c004b0900120c16250208040c094b060a08">
+                  <span class="__cf_email__"
+                    data-cfemail="4321312c37202b2a266d2f26342a3003242e222a2f6d202c2e">[email&#160;protected]</span>
+                  <span class="arrow">↗</span>
+                </a>
+              </div>
+              <div class="contact-row">
+                <span class="k">Studio</span>
+                <a>Lewis Makes Ltd <span class="arrow">·</span></a>
+              </div>
+              <div class="contact-row">
+                <span class="k">Based</span>
+                <a>North Wales, UK <span class="arrow">·</span></a>
+              </div>
+              <div class="contact-row">
+                <span class="k">Available</span>
+                <a><span style="color: var(--accent);">●</span> Open for projects <span class="arrow">·</span></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="foot">
+    <div>© 2026 · Lewis Makes Ltd · designed &amp; built in Wales</div>
+    <div class="foot-links">
+      <a href="#top">Top ↑</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+      <a href="/cdn-cgi/l/email-protection#dab8a8b5aeb9b2b3bff4b6bfadb3a99abdb7bbb3b6f4b9b5b7">Email</a>
     </div>
-  </section>
+  </footer>
 
-</main>
+  <!-- ============ SCRIPTS ============ -->
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="hero-canvas.js"></script>
+  <script>
+    // Nav scroll state
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
 
-<!-- ============ FOOTER ============ -->
-<footer class="foot">
-  <div>© 2026 · Lewis Makes Ltd · designed &amp; built in Wales</div>
-  <div class="foot-links">
-    <a href="#top">Top ↑</a>
-    <a href="#work">Work</a>
-    <a href="#contact">Contact</a>
-    <a href="/cdn-cgi/l/email-protection#dab8a8b5aeb9b2b3bff4b6bfadb3a99abdb7bbb3b6f4b9b5b7">Email</a>
-  </div>
-</footer>
+    // Reveal on scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
 
-<!-- ============ SCRIPTS ============ -->
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="hero-canvas.js"></script>
-<script>
-  // Nav scroll state
-  const nav = document.getElementById('nav');
-  window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 20);
-  }, { passive: true });
+  <!-- ============ TWEAKS ============ -->
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js"
+    integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"
+    integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"
+    integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y"
+    crossorigin="anonymous"></script>
+  <script type="text/babel" src="tweaks-panel.jsx"></script>
 
-  // Reveal on scroll
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
-  }, { threshold: 0.12 });
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-</script>
+  <div id="tweaks-root"></div>
 
-<!-- ============ TWEAKS ============ -->
-<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
-<script type="text/babel" src="tweaks-panel.jsx"></script>
+  <script type="text/babel">
+    const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+      "displayFont": "inter-tight",
+      "motion": "subtle"
+    }/*EDITMODE-END*/;
 
-<div id="tweaks-root"></div>
+    const FONTS = {
+      'newsreader': {
+        label: 'Newsreader',
+        sub: 'Original — editorial serif',
+        family: "'Newsreader', Georgia, serif",
+        weight: 400,
+        italic: 'italic',
+        tracking: '-0.02em'
+      },
+      'fraunces': {
+        label: 'Fraunces',
+        sub: 'Quirky, optical, contemporary',
+        family: "'Fraunces', Georgia, serif",
+        weight: 400,
+        italic: 'italic',
+        tracking: '-0.025em'
+      },
+      'instrument-serif': {
+        label: 'Instrument Serif',
+        sub: 'Light, airy, elegant',
+        family: "'Instrument Serif', Georgia, serif",
+        weight: 400,
+        italic: 'italic',
+        tracking: '-0.015em'
+      },
+      'space-grotesk': {
+        label: 'Space Grotesk',
+        sub: 'Sans — geometric, techy',
+        family: "'Space Grotesk', 'Inter', sans-serif",
+        weight: 500,
+        italic: 'normal',
+        tracking: '-0.035em'
+      },
+      'inter-tight': {
+        label: 'Inter (tight)',
+        sub: 'Sans — neutral, tight',
+        family: "'Inter', sans-serif",
+        weight: 600,
+        italic: 'normal',
+        tracking: '-0.04em'
+      }
+    };
 
-<script type="text/babel">
-  const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
-    "displayFont": "inter-tight",
-    "motion": "subtle"
-  }/*EDITMODE-END*/;
+    const MOTION = {
+      'full': { label: 'Full', sub: 'Particles, marquee, reveals', value: 1 },
+      'subtle': { label: 'Subtle', sub: 'Half-speed, fewer particles', value: 0.5 },
+      'still': { label: 'Still', sub: 'Everything stops', value: 0 }
+    };
 
-  const FONTS = {
-    'newsreader': {
-      label: 'Newsreader',
-      sub: 'Original — editorial serif',
-      family: "'Newsreader', Georgia, serif",
-      weight: 400,
-      italic: 'italic',
-      tracking: '-0.02em'
-    },
-    'fraunces': {
-      label: 'Fraunces',
-      sub: 'Quirky, optical, contemporary',
-      family: "'Fraunces', Georgia, serif",
-      weight: 400,
-      italic: 'italic',
-      tracking: '-0.025em'
-    },
-    'instrument-serif': {
-      label: 'Instrument Serif',
-      sub: 'Light, airy, elegant',
-      family: "'Instrument Serif', Georgia, serif",
-      weight: 400,
-      italic: 'italic',
-      tracking: '-0.015em'
-    },
-    'space-grotesk': {
-      label: 'Space Grotesk',
-      sub: 'Sans — geometric, techy',
-      family: "'Space Grotesk', 'Inter', sans-serif",
-      weight: 500,
-      italic: 'normal',
-      tracking: '-0.035em'
-    },
-    'inter-tight': {
-      label: 'Inter (tight)',
-      sub: 'Sans — neutral, tight',
-      family: "'Inter', sans-serif",
-      weight: 600,
-      italic: 'normal',
-      tracking: '-0.04em'
+    function applyFont(key) {
+      const p = FONTS[key] || FONTS['newsreader'];
+      const r = document.documentElement.style;
+      r.setProperty('--display', p.family);
+      r.setProperty('--display-weight', p.weight);
+      r.setProperty('--display-italic', p.italic);
+      r.setProperty('--display-tracking', p.tracking);
     }
-  };
-
-  const MOTION = {
-    'full':   { label: 'Full',     sub: 'Particles, marquee, reveals', value: 1 },
-    'subtle': { label: 'Subtle',   sub: 'Half-speed, fewer particles', value: 0.5 },
-    'still':  { label: 'Still',    sub: 'Everything stops',            value: 0 }
-  };
-
-  function applyFont(key) {
-    const p = FONTS[key] || FONTS['newsreader'];
-    const r = document.documentElement.style;
-    r.setProperty('--display', p.family);
-    r.setProperty('--display-weight', p.weight);
-    r.setProperty('--display-italic', p.italic);
-    r.setProperty('--display-tracking', p.tracking);
-  }
-  function applyMotion(key) {
-    const m = MOTION[key] || MOTION['full'];
-    document.documentElement.style.setProperty('--motion', m.value);
-    document.documentElement.style.setProperty('--motion-state', m.value === 0 ? 'paused' : 'running');
-  }
-
-  applyFont(TWEAK_DEFAULTS.displayFont);
-  applyMotion(TWEAK_DEFAULTS.motion);
-
-  function App() {
-    const { TweaksPanel, useTweaks, TweakSection, TweakRadio } = window;
-    const [tweaks, setTweak] = useTweaks(TWEAK_DEFAULTS);
-
-    React.useEffect(() => { applyFont(tweaks.displayFont); }, [tweaks.displayFont]);
-    React.useEffect(() => { applyMotion(tweaks.motion); }, [tweaks.motion]);
-
-    return (
-      <TweaksPanel title="Tweaks" subtitle="Display font · animation">
-        <TweakSection title="Display font" subtitle="Hero & section titles">
-          {Object.entries(FONTS).map(([k, p]) => (
-            <button
-              key={k}
-              onClick={() => setTweak('displayFont', k)}
-              style={{
-                all: 'unset',
-                cursor: 'pointer',
-                padding: '10px 12px',
-                marginBottom: 6,
-                border: '1px solid ' + (tweaks.displayFont === k ? 'var(--accent, #d6a063)' : 'rgba(240,236,226,0.12)'),
-                background: tweaks.displayFont === k ? 'rgba(214,160,99,0.08)' : 'transparent',
-                borderRadius: 8,
-                display: 'flex',
-                flexDirection: 'column',
-                gap: 2,
-                transition: 'all 0.15s'
-              }}>
-              <span style={{ fontFamily: p.family, fontWeight: p.weight, fontStyle: p.italic, fontSize: 18, letterSpacing: p.tracking, color: '#f0ece2' }}>{p.label}</span>
-              <span style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: '#9a9485' }}>{p.sub}</span>
-            </button>
-          ))}
-        </TweakSection>
-        <TweakSection title="Animation intensity">
-          <TweakRadio
-            value={tweaks.motion}
-            onChange={(v) => setTweak('motion', v)}
-            options={Object.entries(MOTION).map(([k, m]) => ({ value: k, label: m.label }))}
-          />
-          <div style={{ marginTop: 8, fontSize: 11, color: '#9a9485', fontFamily: 'JetBrains Mono, monospace', letterSpacing: '0.06em' }}>
-            {MOTION[tweaks.motion]?.sub}
-          </div>
-        </TweakSection>
-      </TweaksPanel>
-    );
-  }
-
-  // wait for tweaks-panel.jsx to define globals
-  function mount() {
-    if (window.TweaksPanel && window.useTweaks) {
-      ReactDOM.createRoot(document.getElementById('tweaks-root')).render(<App />);
-    } else {
-      setTimeout(mount, 50);
+    function applyMotion(key) {
+      const m = MOTION[key] || MOTION['full'];
+      document.documentElement.style.setProperty('--motion', m.value);
+      document.documentElement.style.setProperty('--motion-state', m.value === 0 ? 'paused' : 'running');
     }
-  }
-  mount();
-</script>
+
+    applyFont(TWEAK_DEFAULTS.displayFont);
+    applyMotion(TWEAK_DEFAULTS.motion);
+
+    function App() {
+      const { TweaksPanel, useTweaks, TweakSection, TweakRadio } = window;
+      const [tweaks, setTweak] = useTweaks(TWEAK_DEFAULTS);
+
+      React.useEffect(() => { applyFont(tweaks.displayFont); }, [tweaks.displayFont]);
+      React.useEffect(() => { applyMotion(tweaks.motion); }, [tweaks.motion]);
+
+      return (
+        <TweaksPanel title="Tweaks" subtitle="Display font · animation">
+          <TweakSection title="Display font" subtitle="Hero & section titles">
+            {Object.entries(FONTS).map(([k, p]) => (
+              <button
+                key={k}
+                onClick={() => setTweak('displayFont', k)}
+                style={{
+                  all: 'unset',
+                  cursor: 'pointer',
+                  padding: '10px 12px',
+                  marginBottom: 6,
+                  border: '1px solid ' + (tweaks.displayFont === k ? 'var(--accent, #d6a063)' : 'rgba(240,236,226,0.12)'),
+                  background: tweaks.displayFont === k ? 'rgba(214,160,99,0.08)' : 'transparent',
+                  borderRadius: 8,
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: 2,
+                  transition: 'all 0.15s'
+                }}>
+                <span style={{ fontFamily: p.family, fontWeight: p.weight, fontStyle: p.italic, fontSize: 18, letterSpacing: p.tracking, color: '#f0ece2' }}>{p.label}</span>
+                <span style={{ fontFamily: 'Inter, sans-serif', fontSize: 11, color: '#9a9485' }}>{p.sub}</span>
+              </button>
+            ))}
+          </TweakSection>
+          <TweakSection title="Animation intensity">
+            <TweakRadio
+              value={tweaks.motion}
+              onChange={(v) => setTweak('motion', v)}
+              options={Object.entries(MOTION).map(([k, m]) => ({ value: k, label: m.label }))}
+            />
+            <div style={{ marginTop: 8, fontSize: 11, color: '#9a9485', fontFamily: 'JetBrains Mono, monospace', letterSpacing: '0.06em' }}>
+              {MOTION[tweaks.motion]?.sub}
+            </div>
+          </TweakSection>
+        </TweaksPanel>
+      );
+    }
+
+    // wait for tweaks-panel.jsx to define globals
+    function mount() {
+      if (window.TweaksPanel && window.useTweaks) {
+        ReactDOM.createRoot(document.getElementById('tweaks-root')).render(<App />);
+      } else {
+        setTimeout(mount, 50);
+      }
+    }
+    mount();
+  </script>
 
 </body>
+
 </html>
