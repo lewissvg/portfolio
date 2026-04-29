@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lewis Brotchie — CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #f7f4ec;
+    color: #1a1812;
+    padding: 60px 40px;
+    line-height: 1.55;
+    font-size: 14px;
+  }
+  .sheet {
+    max-width: 760px;
+    margin: 0 auto;
+    background: #fffdf6;
+    padding: 64px;
+    border: 1px solid rgba(0,0,0,0.06);
+    box-shadow: 0 30px 80px rgba(60,40,10,0.08);
+  }
+  h1 { font-family: 'Newsreader', serif; font-weight: 400; font-size: 56px; line-height: 1; letter-spacing: -0.02em; margin-bottom: 8px; }
+  h1 .em { font-style: italic; color: #b8762a; }
+  h2 { font-family: 'Newsreader', serif; font-weight: 400; font-style: italic; font-size: 22px; margin-top: 36px; margin-bottom: 16px; color: #b8762a; border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 6px; }
+  .meta { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #6e6856; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 28px; }
+  .meta a { color: #b8762a; text-decoration: none; }
+  .lede { font-family: 'Newsreader', serif; font-size: 19px; line-height: 1.45; color: #322c1f; margin-bottom: 24px; max-width: 600px; }
+  .lede em { color: #b8762a; }
+  .row { display: grid; grid-template-columns: 140px 1fr; gap: 24px; padding: 14px 0; border-bottom: 1px dashed rgba(0,0,0,0.08); }
+  .row:last-child { border-bottom: none; }
+  .row .k { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #6e6856; letter-spacing: 0.06em; text-transform: uppercase; }
+  .row .v strong { font-weight: 600; }
+  .row .v .role { font-family: 'Newsreader', serif; font-style: italic; color: #b8762a; }
+  ul { list-style: none; padding-left: 0; }
+  ul li { padding: 4px 0; padding-left: 16px; position: relative; }
+  ul li::before { content: '·'; color: #b8762a; position: absolute; left: 0; font-size: 18px; line-height: 1; top: 4px; }
+  .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(0,0,0,0.08); font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #6e6856; letter-spacing: 0.06em; }
+  @media print {
+    body { background: white; padding: 0; }
+    .sheet { box-shadow: none; border: none; padding: 32px; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <h1>Lewis <span class="em">Brotchie</span></h1>
+  <div class="meta">
+    Lewis Makes Ltd · North Wales, UK · <a href="/cdn-cgi/l/email-protection#fb9989948f9893929ed5979e8c9288bb9c969a9297d5989496"><span class="__cf_email__" data-cfemail="ee8c9c819a8d86878bc0828b99879dae89838f8782c08d8183">[email&#160;protected]</span></a>
+  </div>
+
+  <p class="lede">Frontend &amp; product engineer with <em>10+ years</em> shipping websites, web apps, games and the occasional desktop or mobile app. Happiest somewhere between design and engineering — prototyping fast, then polishing the details that make a product feel finished.</p>
+
+  <h2>Stack</h2>
+  <div class="row"><span class="k">Frontend</span><span class="v"><strong>TypeScript, React</strong>, modern HTML/CSS, Vite/Next/Astro, Storybook</span></div>
+  <div class="row"><span class="k">Canvas / games</span><span class="v"><strong>Pixi.js</strong>, WebGL fundamentals, 2D physics &amp; tweens, asset pipelines, perf profiling</span></div>
+  <div class="row"><span class="k">Backend / native</span><span class="v"><strong>C# / .NET 8</strong>, Node.js, WPF, Win32 / system APIs, iOS &amp; Android (released)</span></div>
+  <div class="row"><span class="k">Process</span><span class="v">Prototype-first · design-adjacent · solo &amp; small teams · async, written</span></div>
+
+  <h2>Selected work</h2>
+  <div class="row">
+    <span class="k">2026 — now</span>
+    <span class="v"><strong>Rectify</strong> <span class="role">— system-wide autocorrect for Windows.</span><br>
+    Solo: design, build, marketing site. C#/.NET 8, WPF, SymSpell, low-level keyboard hooks. Currently in private alpha.</span>
+  </div>
+  <div class="row">
+    <span class="k">2014 — 2025</span>
+    <span class="v"><strong>Client &amp; product work</strong> <span class="role">— web apps, games, mobile.</span><br>
+    A decade of shipping across web, native mobile and canvas-based games. Specifics on request — much under NDA.</span>
+  </div>
+
+  <h2>What I'm good for</h2>
+  <ul>
+    <li>End-to-end ownership of frontend on small product teams</li>
+    <li>Animation, interaction polish, and the unglamorous edge-case work</li>
+    <li>Canvas / Pixi.js / WebGL when the DOM isn't enough</li>
+    <li>Quick proofs of concept that cross stack boundaries (C#, Node, native)</li>
+    <li>Founder/co-founder collaboration on early-stage product</li>
+  </ul>
+
+  <div class="footer">CV · Lewis Brotchie · Lewis Makes Ltd · updated April 2026 · press ⌘P / Ctrl+P to save as PDF</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
